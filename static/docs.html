@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SubHub 帮助文档</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <main class="mx-auto max-w-3xl space-y-6 px-4 py-12">
+      <header class="space-y-2">
+        <h1 class="text-3xl font-semibold">使用指南</h1>
+        <p class="text-slate-400">
+          SubHub 是一个运行在 Cloudflare Workers 上的订阅管理面板，登录后即可查看你的机场订阅信息。
+        </p>
+      </header>
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold">用户登录</h2>
+        <ol class="list-decimal space-y-2 pl-5 text-slate-300">
+          <li>访问首页，输入你的订阅 UUID。</li>
+          <li>登录成功后即可查看订阅链接、到期时间及流量用量。</li>
+          <li>点击“刷新”按钮即可实时更新订阅 header 的流量数据。</li>
+        </ol>
+      </section>
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold">管理员操作</h2>
+        <p class="text-slate-300">使用管理员口令登录后，你可以：</p>
+        <ul class="list-disc space-y-2 pl-5 text-slate-300">
+          <li>添加新的订阅用户。</li>
+          <li>修改用户的订阅链接、到期时间、备注及流量基数。</li>
+          <li>删除无效用户或过期订阅。</li>
+        </ul>
+      </section>
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold">常见问题</h2>
+        <ul class="list-disc space-y-2 pl-5 text-slate-300">
+          <li>订阅 URL 需可在 Cloudflare 网络中访问，否则刷新功能会失败。</li>
+          <li>JWT 登录态默认 24 小时，如需更长时间可调整环境变量。</li>
+          <li>KV 数据结构固定，如需扩展可以在源码中新增字段。</li>
+        </ul>
+      </section>
+      <footer class="border-t border-slate-800 pt-6 text-sm text-slate-500">
+        返回 <a href="/" class="text-indigo-400 hover:text-indigo-300">登录页</a>。
+      </footer>
+    </main>
+  </body>
+</html>
