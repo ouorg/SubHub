@@ -1,0 +1,15 @@
+name = "subhub"
+main = "src/worker.ts"
+compatibility_date = "2024-05-01"
+kv_namespaces = [
+  { binding = "USERS_KV", id = "" }
+]
+
+[vars]
+# ADMIN_KEY = "set-in-dashboard"
+# JWT_SECRET = "set-in-dashboard"
+
+[rules]
+[[rules.rules]]
+globs = ["**/*.html"]
+type = "Text"
