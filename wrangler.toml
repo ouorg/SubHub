@@ -2,12 +2,12 @@ name = "subhub"
 main = "src/worker.ts"
 compatibility_date = "2024-05-01"
 kv_namespaces = [
-  { binding = "USERS_KV", id = "" }
+  { binding = "USERS_KV", id = "77d730cbe76542cbb578f49cbb480bc5" }
 ]
 
 [vars]
-# ADMIN_KEY = "set-in-dashboard"
-# JWT_SECRET = "set-in-dashboard"
+# ADMIN_KEY = "aloneicymoon"
+# JWT_SECRET = "5c8fc50aafb7418e8bde8ec1870ad976"
 
 [rules]
 [[rules.rules]]
